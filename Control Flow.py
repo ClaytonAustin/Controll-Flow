@@ -21,17 +21,18 @@ pin = input("please chose a four-digit security pin: ")
 
 print("\nThank you", firstName + ",we see that you set your pin to",pin)
 
-
 print("\nWould You Like To Make A Transaction Through Our ATM")
 
+atm = input("Yes or No: ").upper()
+
+if atm == "YES":
+    print("\n****************************************************************************\n")
 
 
 
 
-
-
-
-
+else:
+    print("\n Have a wonderful day",firstName,lastName: + ", please come back and visit soon.")
 
 
 
