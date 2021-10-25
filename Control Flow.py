@@ -32,7 +32,7 @@ if atm == "YES":
 
 
 else:
-    print("\n Have a wonderful day",firstName,lastName: + ", please come back and visit soon.")
+    print("\n Have a wonderful day",firstName,lastName + ", please come back and visit soon.")
 
 
 
