@@ -37,29 +37,23 @@ if atm == "YES":
         balance = 674
         print("\nYour Balance: $" + str(balance))
 
+        # Ask Users what type of transaction they want - Withdrawal - Deposit
+        typeOfTransaction = input("\nWould you like to make a Withdrawal or Deposit\nW = withdrawal Or D = Deposit: ").lower()
+        if typeOfTransaction == "w":
+            withdrawalAmount = int(input("Enter amount of withdrawal: "))
+            balance = balance - withdrawalAmount
+            print("Your new balance is: $" + str(balance))
+            
+            
+        
+        
+        
+        
+
     else:print("\nSorry",firstName,lastName,"Your pin is incorrect")
 
 else:
     print("\nHave a wonderful day",firstName,lastName + ", please come back and visit soon.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
