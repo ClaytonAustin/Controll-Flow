@@ -38,7 +38,7 @@ if atm == "YES":
         print("\nYour Balance: $" + str(balance))
 
         # Ask Users what type of transaction they want - Withdrawal - Deposit
-        typeOfTransaction = input("\nWould you like to make a Withdrawal or Deposit\nW = withdrawal Or D = Deposit: ").lower()
+        typeOfTransaction = input("\nWould you like to make a Withdrawal or Deposit\nW = withdrawal Or D = Deposit B= Balance: ").lower()
         if typeOfTransaction == "w":
             withdrawalAmount = int(input("Enter amount of withdrawal: "))
             balance = balance - withdrawalAmount
@@ -46,7 +46,14 @@ if atm == "YES":
             
             
         
-        
+        elif typeOfTransaction == "d":
+            depositAmount = int(input("Enter amount of your deposit: "))
+            balance = balance + depositAmount
+            print("your new balance is: $" + str(balance))
+
+
+        else:
+            print("your current balance is: $" + str(balance))
         
         
 
