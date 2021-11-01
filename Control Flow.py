@@ -17,7 +17,11 @@ print("\nWelcome To Cash-R-Us",firstName,lastName + ", We Will Now Set Up A Secu
 
 #set up a PIN (Personal Identification Number)
 
+
 pin = input("please chose a four-digit security pin: ")
+if int(len(pin)) != 4:
+    print("Error! Pin must be exactly 4 characters!")
+    exit()
 
 print("\nThank you", firstName + ",we see that you set your pin to",pin)
 
